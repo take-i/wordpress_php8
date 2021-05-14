@@ -167,7 +167,7 @@ if ( !class_exists( 'wp_jquery_manager_plugin' ) ) {
 			add_management_page( $page_title, $menu_title, $capability, $menu_slug, $function );
 	    }
 
-        public function autoptimize_support( $dontmove_array ) {
+        public static function autoptimize_support( $dontmove_array ) {
             $dontmove_array[] = '/jquery-manager/assets/js';
             return $dontmove_array;
         }
