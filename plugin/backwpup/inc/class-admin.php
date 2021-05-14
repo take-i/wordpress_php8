@@ -25,7 +25,7 @@ final class BackWPup_Admin {
     /**
      * Enqueues main css file
      */
-    public function admin_css()
+    public static function admin_css()
     {
         $pluginDir = untrailingslashit(BackWPup::get_plugin_data('plugindir'));
         $filePath = "{$pluginDir}/assets/css/main.min.css";
